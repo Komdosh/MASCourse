@@ -1,17 +1,16 @@
-package pro.komdosh.lab1
+package pro.komdosh.lab1.behavior
 
 import jade.core.behaviours.TickerBehaviour
+import pro.komdosh.lab1.agent.TickerAgent
 
-private const val MAX_STEPS = 10
+private const val MAX_STEPS = 5
 
-class SimpleTick(agent: DefaultAgent, period: Long) : TickerBehaviour(agent, period) {
+class SimpleTick(private val agent: TickerAgent, period: Long) : TickerBehaviour(agent, period) {
 
-    private var currentStep: Int
+    private var currentStep: Int = 0
 
     init {
         this.setFixedPeriod(true)
-        this.agent = agent
-        this.currentStep = 0
     }
 
     override fun onTick() {
@@ -22,5 +21,4 @@ class SimpleTick(agent: DefaultAgent, period: Long) : TickerBehaviour(agent, per
             this.stop()
         }
     }
-
 }

@@ -16,7 +16,7 @@ repositories {
 
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
-    compile("com.tilab.jade", "jade", "4.5.0")
+    implementation("com.tilab.jade", "jade", "4.5.0")
 }
 
 tasks.withType<KotlinCompile> {

@@ -1,7 +1,7 @@
 # Created by .ignore support plugin (hsz.mobi)
 .gitignore
 .gradle/
-.idea/
 APDescription.txt
 MTPs-Main-Container.txt
 build/
+.idea/sonarlint/

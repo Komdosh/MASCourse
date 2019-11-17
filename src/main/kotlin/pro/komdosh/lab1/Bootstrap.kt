@@ -3,6 +3,11 @@ package pro.komdosh.lab1
 import jade.core.Profile
 import jade.core.ProfileImpl
 import jade.core.Runtime
+import jade.tools.DummyAgent.DummyAgent
+import jade.tools.sniffer.Sniffer
+import pro.komdosh.lab1.agent.TalkerAgent
+import pro.komdosh.lab1.agent.TickerAgent
+
 
 private const val numberOfAgents = 5
 
@@ -13,12 +18,14 @@ fun main() {
     p.setParameter(Profile.MAIN_PORT, "10098")
     p.setParameter(Profile.GUI, "true")
     val cc = rt.createMainContainer(p)
-    try {
-        for (i in 1..numberOfAgents) {
-            val agent = cc.createNewAgent(i.toString(), "pro.komdosh.lab1.DefaultAgent", null)
-            agent.start()
-        }
-    } catch (e: Exception) {
-        e.printStackTrace()
+
+    cc.createNewAgent("Sniffer", Sniffer::class.java.name, null).start()
+    cc.createNewAgent("DummyAgent", DummyAgent::class.java.name, null).start()
+
+    cc.createNewAgent("TalkerAgent",  TalkerAgent::class.java.name, null).start()
+
+    for (i in 1..numberOfAgents) {
+        val agentController = cc.createNewAgent("Ticker #$i", TickerAgent::class.java.name, null)
+        agentController.start()
     }
 }

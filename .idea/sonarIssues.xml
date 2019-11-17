@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/a.dummy">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/a.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/fragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/fragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/cds/build.gradle.kts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/cds/devops/docker/init.sh">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/cds/devops/envSetup/installAlunaLinuxServices.sh">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/cds/devops/installCds.sh">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/cds/docker/init.sh">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/cds/src/main/resources/config/application-dev.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/cds/src/main/resources/config/application.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/build.gradle.kts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/devops/docker/init.sh">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/devops/docker/postgres.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/devops/envSetup/installAlunaLinuxServices.sh">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/devops/envSetup/installCtakesDictionaries.sh">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/devops/installChartAbstraction.sh">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/devops/pdftext2hocr/build.sh">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/installDictionaries.sh">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/pdftext2hocr/build.sh">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/src/main/java/com/alunahealth/chart/abstraction/CAApplication.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/src/main/java/com/alunahealth/chart/abstraction/config/CustomUserDetails.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/src/main/java/com/alunahealth/chart/abstraction/controller/api/AdminController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/src/main/java/com/alunahealth/chart/abstraction/controller/user/api/AdminController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/src/main/java/com/alunahealth/chart/abstraction/controller/user/api/UsersController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/src/main/java/com/alunahealth/chart/abstraction/controller/user/model/UserDto.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/src/main/java/com/alunahealth/chart/abstraction/controller/user/model/UserRoleDto.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/src/main/java/com/alunahealth/chart/abstraction/model/entity/user/User.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/src/main/java/com/alunahealth/chart/abstraction/model/jpa/SystemEnumConverter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/src/main/java/com/alunahealth/chart/abstraction/model/jpa/UserRole.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/src/main/java/com/alunahealth/chart/abstraction/model/jpa/UserRoleConverter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/src/main/java/com/alunahealth/chart/abstraction/security/RoleAccessChecker.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/src/main/java/com/alunahealth/chart/abstraction/service/AdminServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/src/main/java/com/alunahealth/chart/abstraction/service/fhir/BaseFhirService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/src/main/java/com/alunahealth/chart/abstraction/service/fhir/DocumentReferenceService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/src/main/java/com/alunahealth/chart/abstraction/service/fhir/FHIRPathService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/src/main/java/com/alunahealth/chart/abstraction/service/fhir/dto/AttachmentDto.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/src/main/java/com/alunahealth/chart/abstraction/service/source/RutaScriptService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/src/main/java/com/alunahealth/chart/abstraction/service/source/SuggestionServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/src/main/java/com/alunahealth/chart/abstraction/service/source/pdf2txt/layout/utils/ExternalProcessExecutor.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/src/main/java/com/alunahealth/fhir/smart/client/FhirVersion.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/src/main/java/com/alunahealth/fhir/smart/client/GenericFhirClient.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/src/main/java/com/alunahealth/fhir/smart/service/FhirService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/src/main/java/com/alunahealth/platform/Testing.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/src/main/java/com/alunahealth/platform/service/fhir/FHIRPathService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/src/main/java/com/alunahealth/umls/TryUimaExtension.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/src/main/resources/config/application-dev.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/src/main/resources/config/application-personalTemplate.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/src/main/resources/config/application-prod.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/src/main/resources/config/application-tav.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/src/main/resources/config/application.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/src/test/java/com/alunahealth/platform/uima/TryUima.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/src/test/java/com/alunahealth/platform/uima/TryUimaCT.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/src/test/java/com/alunahealth/platform/uima/TryUimaCT2.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/src/test/java/com/alunahealth/platform/uima/TryUimaTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/src/test/java/com/alunahealth/uima/tag/Transmitter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/src/test/java/com/alunahealth/uima/tag/Transmitter_Type.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/src/test/resources/uima/desc.type/TagTestTypes.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/library/build.gradle.kts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/library/devops/docker/init.sh">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/library/devops/envSetup/installAlunaLinuxServices.sh">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/library/devops/installLibrary.sh">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/library/package.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/library/src/main/frontend/app/modules/library/components/logicEditor/customCodeMirror.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/library/src/main/frontend/app/modules/library/components/logicEditor/logicEditor.component.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/library/src/main/java/com/alunahealth/platform/config/UserDetailsServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/library/src/main/java/com/alunahealth/platform/controller/AngularController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/library/src/main/java/com/alunahealth/platform/controller/platform/api/AdminController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/library/src/main/java/com/alunahealth/platform/controller/platform/api/OrganizationController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/library/src/main/java/com/alunahealth/platform/controller/platform/model/UserRoleDto.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/library/src/main/java/com/alunahealth/platform/model/platform/UserRole.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/library/src/main/resources/data/initGuides/Breast Cancer.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/AlunaPlatform/library/src/main/resources/data/initGuides/Non-Small Cell Lung Cancer.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/OncoCDS/build.gradle.kts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/OncoCDS/devops/clinicalTrials/aactdb.sh">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/OncoCDS/devops/docker/init.sh">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/OncoCDS/devops/installAlunaOncoCDS.sh">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/OncoCDS/src/main/java/com/alunahealth/oncocds/config/ApplicationConfig.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/OncoCDS/src/main/java/com/alunahealth/oncocds/controller/decision/api/CTController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/OncoCDS/src/main/java/com/alunahealth/oncocds/controller/patient/api/PatientsController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/OncoCDS/src/main/java/com/alunahealth/oncocds/service/patient/PatientService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/OncoCDS/src/main/java/com/alunahealth/oncocds/service/user/UserService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/Aluna/OncoCDS/src/main/resources/config/application.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/.gitignore">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/build.gradle.kts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/kotlin/pro/komdosh/lab1/Bootstrap.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/kotlin/pro/komdosh/lab1/DefaultAgent.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/kotlin/pro/komdosh/lab1/SimpleTick.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/kotlin/pro/komdosh/lab1/SnifferAgent.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/kotlin/pro/komdosh/lab1/TalkerAgent.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/kotlin/pro/komdosh/lab1/agent/DefaultAgent.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/kotlin/pro/komdosh/lab1/agent/TalkerAgent.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/kotlin/pro/komdosh/lab1/agent/TickerAgent.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/kotlin/pro/komdosh/lab1/behavior/SimpleTick.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/kotlin/pro/komdosh/lab1/behavior/TalkerBehavior.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/kotlin/pro/komdosh/lab1/behavior/TalkerBehaviour.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/kotlin/pro/komdosh/lab1/behavior/myBehaviour.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/kotlin/pro/komdosh/lab1/behavior/myBehaviour.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tilab.jade/jade/4.5.0/a2017e47803c9c3d1abbd73f29d62524ca464edf/jade-4.5.0.jar!/jade/core/Runtime.class">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tilab.jade/jade/4.5.0/a2017e47803c9c3d1abbd73f29d62524ca464edf/jade-4.5.0.jar!/jade/lang/acl/ACLMessage.class">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tilab.jade/jade/4.5.0/a2017e47803c9c3d1abbd73f29d62524ca464edf/jade-4.5.0.jar!/jade/tools/sniffer/Sniffer.class">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tilab.jade/jade/4.5.0/a2017e47803c9c3d1abbd73f29d62524ca464edf/jade-4.5.0.jar!/jade/wrapper/AgentContainer.class">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

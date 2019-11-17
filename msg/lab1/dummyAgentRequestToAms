@@ -1,0 +1,7 @@
+(REQUEST
+ :sender  ( agent-identifier :name DummyAgent@192.168.25.28:10098/JADE  :addresses (sequence http://dev88.corp.biarum.com:7778/acc ))
+ :receiver  (set ( agent-identifier :name ams@192.168.25.28:10098/JADE ) )
+ :content  "((action (agent-identifier :name ams@localhost:1099/JADE)
+(get-description)))" 
+ :language  FIPA-SL0  :ontology  fipa-agent-management  :protocol  fipa-request
+)
