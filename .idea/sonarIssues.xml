@@ -433,6 +433,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/kotlin/SharedModule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/kotlin/pro/komdosh/lab1/Bootstrap.kt">
           <value>
             <set />
@@ -494,6 +499,51 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/kotlin/pro/komdosh/lab1/behavior/myBehaviour.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/kotlin/pro/komdosh/lab2/Bootstrap.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/kotlin/pro/komdosh/lab2/agent/BehaviourAgent.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/kotlin/pro/komdosh/lab2/agent/ExampleAgent.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/kotlin/pro/komdosh/lab2/agent/TalkerAgent.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/kotlin/pro/komdosh/lab2/behavior/ExampleBehaviour.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/kotlin/pro/komdosh/lab2/behavior/ExampleCycleBehaviour.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/kotlin/pro/komdosh/lab2/behavior/ExampleSimpleBehaviour.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/kotlin/pro/komdosh/lab2/behavior/ExampleSimpleSubBehaviour.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/kotlin/pro/komdosh/lab2/behavior/TalkerBehaviour.kt">
           <value>
             <set />
           </value>
