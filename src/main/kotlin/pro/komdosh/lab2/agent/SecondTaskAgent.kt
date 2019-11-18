@@ -6,7 +6,7 @@ import pro.komdosh.lab2.behavior.SecondTaskFirstSimpleBehaviour
 import pro.komdosh.lab2.behavior.SecondTaskSecondSimpleBehaviour
 
 
-class SecondTaskAgent : Agent() { //parallelBehaviour with two simple sub behaviours
+class SecondTaskAgent : Agent() { //parallel behaviour with two simple behaviours
     override fun setup() {
         println("Agent $aid is started. Now Execute parallel behaviour")
 
