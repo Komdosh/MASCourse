@@ -1,2 +1,2 @@
 # MASCourse
-Multi Agent System learning
+Multi Agent System
