@@ -12,11 +12,12 @@ class SenderBehaviour(
 ) : SimpleBehaviour() {
 
     override fun action() {
-        val msg = buildSendMsg(ACLMessage(ACLMessage.QUERY_IF), AID("Receiver", false))
+        sendMsg()
 
-        agent.send(msg)
-        println("Request for receiver sent")
+        receiveAnswer()
+    }
 
+    private fun receiveAnswer() {
         val mt = MessageTemplate.and(
             MessageTemplate.MatchPerformative(ACLMessage.AGREE),
             MessageTemplate.MatchLanguage("Prolog")
@@ -27,6 +28,13 @@ class SenderBehaviour(
             println("Message: \"${receivedMsg.content}\" was sent by ${receivedMsg.sender}")
             println("=======================================")
         }
+    }
+
+    private fun sendMsg() {
+        val msg = buildSendMsg(ACLMessage(ACLMessage.QUERY_IF), AID("Receiver", false))
+
+        agent.send(msg)
+        println("Request for receiver sent")
     }
 
     private fun buildSendMsg(msg: ACLMessage, receiverAID: AID): ACLMessage {
