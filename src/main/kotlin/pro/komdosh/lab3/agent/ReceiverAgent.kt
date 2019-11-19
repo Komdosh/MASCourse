@@ -7,7 +7,7 @@ import pro.komdosh.lab3.behavior.ReceiverBehaviour
 class ReceiverAgent : Agent() {
     override fun setup() {
         println("Receiver Agent $aid is started")
-        val receiverBehaviour = ReceiverBehaviour(this)
+        val receiverBehaviour = ReceiverBehaviour()
         addBehaviour(receiverBehaviour)
         if (receiverBehaviour.finished) {
             removeBehaviour(receiverBehaviour)

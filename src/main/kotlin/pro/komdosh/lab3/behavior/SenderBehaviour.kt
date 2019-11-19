@@ -4,10 +4,8 @@ import jade.core.AID
 import jade.core.behaviours.SimpleBehaviour
 import jade.lang.acl.ACLMessage
 import jade.lang.acl.MessageTemplate
-import pro.komdosh.lab3.agent.SenderAgent
 
 class SenderBehaviour(
-    private val agent: SenderAgent,
     var finished: Boolean = false
 ) : SimpleBehaviour() {
 

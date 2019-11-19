@@ -1,10 +1,8 @@
 package pro.komdosh.lab2.behavior
 
 import jade.core.behaviours.SimpleBehaviour
-import pro.komdosh.lab2.agent.SecondTaskAgent
 
 class SecondTaskFirstSimpleBehaviour(
-    private val agent: SecondTaskAgent,
     private var finished: Boolean = false,
     private var n: Int = 0
 ) : SimpleBehaviour() {

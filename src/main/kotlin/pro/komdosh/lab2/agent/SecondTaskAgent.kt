@@ -11,8 +11,8 @@ class SecondTaskAgent : Agent() { //parallel behaviour with two simple behaviour
         println("Agent $aid is started. Now Execute parallel behaviour")
 
         val parallelBehaviour = ParallelBehaviour()
-        parallelBehaviour.addSubBehaviour(SecondTaskFirstSimpleBehaviour(this))
-        parallelBehaviour.addSubBehaviour(SecondTaskSecondSimpleBehaviour(this))
+        parallelBehaviour.addSubBehaviour(SecondTaskFirstSimpleBehaviour())
+        parallelBehaviour.addSubBehaviour(SecondTaskSecondSimpleBehaviour())
 
         addBehaviour(parallelBehaviour)
     }

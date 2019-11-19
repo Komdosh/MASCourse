@@ -4,37 +4,36 @@ import jade.core.AID
 import jade.core.behaviours.SimpleBehaviour
 import jade.lang.acl.ACLMessage
 import jade.lang.acl.MessageTemplate
-import pro.komdosh.lab3.agent.ReceiverAgent
 
 class ReceiverBehaviour(
-    private val agent: ReceiverAgent,
     var finished: Boolean = false
 ) : SimpleBehaviour() {
 
     override fun action() {
-        receiveRequest()
+        val sender = receiveRequest()
 
-        sendAnswer()
+        sendAnswer(sender)
     }
 
-    private fun sendAnswer() {
-        val msg = buildAnswerMsg(ACLMessage(ACLMessage.AGREE), AID("Sender", false))
-        agent.send(msg)
+    private fun sendAnswer(sendTo: AID) {
+        val msg = buildAnswerMsg(ACLMessage(ACLMessage.AGREE), sendTo)
+        myAgent.send(msg)
         println("Response for sender sent")
     }
 
-    private fun receiveRequest() {
+    private fun receiveRequest(): AID {
         val mt = MessageTemplate.and(
             MessageTemplate.MatchPerformative(ACLMessage.QUERY_IF),
             MessageTemplate.MatchLanguage("Prolog")
         )
 
-        val receivedMsg = agent.blockingReceive(mt)
+        val receivedMsg = myAgent.blockingReceive(mt)
         if (receivedMsg != null) {
             println("=======================================")
             println("Message: \"${receivedMsg.content}\" was sent by ${receivedMsg.sender}")
             println("=======================================")
         }
+        return receivedMsg.sender
     }
 
     private fun buildAnswerMsg(msg: ACLMessage, receiverAID: AID): ACLMessage {

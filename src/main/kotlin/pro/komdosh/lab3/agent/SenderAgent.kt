@@ -7,7 +7,7 @@ import pro.komdosh.lab3.behavior.SenderBehaviour
 class SenderAgent : Agent() {
     override fun setup() {
         println("Sender Agent $aid is started.")
-        val senderBehaviour = SenderBehaviour(this)
+        val senderBehaviour = SenderBehaviour()
         addBehaviour(senderBehaviour)
         if (senderBehaviour.finished) {
             removeBehaviour(senderBehaviour)
