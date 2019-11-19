@@ -1,23 +1,23 @@
 package pro.komdosh.lab3
 
-import createMainContainer
-import jade.core.AID
-import jade.domain.JADEAgentManagement.SniffOn
+import pro.komdosh.attachSniffer
+import pro.komdosh.createMainContainer
 import pro.komdosh.lab3.agent.ReceiverAgent
 import pro.komdosh.lab3.agent.SenderAgent
 
+
 fun main() {
-    val cc = createMainContainer(withDummy = false, withGui = false, withSniffer = true)
+    val cc = createMainContainer(withDummy = false, withGui = false)
 
+    val receiver = cc.createNewAgent("Receiver", ReceiverAgent::class.java.name, null)
+    val sender = cc.createNewAgent("Sender", SenderAgent::class.java.name, null)
 
+    attachSniffer(cc, listOf(receiver, sender))
 
-    cc.createNewAgent("Receiver", ReceiverAgent::class.java.name, null).start()
-
-    cc.createNewAgent("Sender", SenderAgent::class.java.name, null).start()
-    val snif = SniffOn()
-
-    snif.sniffer = AID("Sniffer", false)
-    snif.addSniffedAgents(AID("Receiver", false))
+    receiver.start() //send message after sniffer is attached
+    sender.start()
 }
+
+
 
 

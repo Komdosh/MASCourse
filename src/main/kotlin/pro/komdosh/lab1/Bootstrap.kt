@@ -1,6 +1,6 @@
 package pro.komdosh.lab1
 
-import createMainContainer
+import pro.komdosh.createMainContainer
 import pro.komdosh.lab1.agent.TalkerAgent
 import pro.komdosh.lab1.agent.TickerAgent
 

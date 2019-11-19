@@ -108,6 +108,11 @@
             <set />
           </value>
         </entry>
+        <entry key="C:/Aluna/AlunaPlatform/chartabstraction/src/main/frontend/app/modules/chart/service/questions.service.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="C:/Aluna/AlunaPlatform/chartabstraction/src/main/java/com/alunahealth/chart/abstraction/CAApplication.java">
           <value>
             <set />
@@ -438,6 +443,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/kotlin/pro/komdosh/SharedModule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/kotlin/pro/komdosh/lab1/Bootstrap.kt">
           <value>
             <set />
@@ -548,12 +558,52 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/kotlin/pro/komdosh/lab3/Bootstrap.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/kotlin/pro/komdosh/lab3/behavior/ReceiverBehaviour.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/kotlin/pro/komdosh/lab3/behavior/SenderBehaviour.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell">
           <value>
             <set />
           </value>
         </entry>
+        <entry key="$APPLICATION_CONFIG_DIR$/consoles/db/268b20b9-eff6-4672-81bd-4935795a7911/console.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tilab.jade/jade/4.5.0/a2017e47803c9c3d1abbd73f29d62524ca464edf/jade-4.5.0.jar!/jade/core/AID.class">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tilab.jade/jade/4.5.0/a2017e47803c9c3d1abbd73f29d62524ca464edf/jade-4.5.0.jar!/jade/core/Agent.class">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tilab.jade/jade/4.5.0/a2017e47803c9c3d1abbd73f29d62524ca464edf/jade-4.5.0.jar!/jade/core/Runtime.class">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tilab.jade/jade/4.5.0/a2017e47803c9c3d1abbd73f29d62524ca464edf/jade-4.5.0.jar!/jade/core/behaviours/Behaviour.class">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tilab.jade/jade/4.5.0/a2017e47803c9c3d1abbd73f29d62524ca464edf/jade-4.5.0.jar!/jade/domain/JADEAgentManagement/SniffOn.class">
           <value>
             <set />
           </value>

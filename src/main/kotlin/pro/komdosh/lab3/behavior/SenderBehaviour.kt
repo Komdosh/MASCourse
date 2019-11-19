@@ -3,6 +3,7 @@ package pro.komdosh.lab3.behavior
 import jade.core.AID
 import jade.core.behaviours.SimpleBehaviour
 import jade.lang.acl.ACLMessage
+import jade.lang.acl.MessageTemplate
 import pro.komdosh.lab3.agent.SenderAgent
 
 class SenderBehaviour(
@@ -11,24 +12,35 @@ class SenderBehaviour(
 ) : SimpleBehaviour() {
 
     override fun action() {
-        val msg = ACLMessage(ACLMessage.INFORM)
+        val msg = buildSendMsg(ACLMessage(ACLMessage.QUERY_IF), AID("Receiver", false))
 
-        val receiver = "Receiver"
-        println("Receiver agent is $receiver")
+        agent.send(msg)
+        println("Request for receiver sent")
 
-        val receiverAID = AID(receiver, false)
+        val mt = MessageTemplate.and(
+            MessageTemplate.MatchPerformative(ACLMessage.AGREE),
+            MessageTemplate.MatchLanguage("Prolog")
+        )
+        val receivedMsg = agent.blockingReceive(mt)
+        if (receivedMsg != null) {
+            println("=======================================")
+            println("Message: \"${receivedMsg.content}\" was sent by ${receivedMsg.sender}")
+            println("=======================================")
+        }
+    }
+
+    private fun buildSendMsg(msg: ACLMessage, receiverAID: AID): ACLMessage {
         msg.addReceiver(receiverAID)
 
         println("Sending the following message to the agent $receiverAID")
 
-        msg.language = "human-language"
+        msg.language = "Prolog"
+        msg.ontology = "Parents"
         msg.encoding = "text/plain"
         msg.conversationId = "Conversation-ID#0001"
-        msg.content = "Hi, friend!! Have a nice day!!"
+        msg.content = "Son(John, Bob)"
         println(msg)
-
-        agent.send(msg)
-        println("Message sent")
+        return msg
     }
 
     override fun done(): Boolean {
