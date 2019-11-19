@@ -53,7 +53,7 @@ class SolveSecondBehaviour : SimpleBehaviour() {
 
     override fun done(): Boolean {
         if (state == 6) {
-            println("${agent.aid.localName} 41 - 21 + 48 * 54.56 = $result")
+            println("${agent.aid.localName} 43.65 * 5.6 + 54.6 * 56.4 = $result")
             finished = true
         }
         return finished

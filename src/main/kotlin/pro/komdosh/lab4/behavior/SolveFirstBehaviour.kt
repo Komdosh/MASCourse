@@ -52,7 +52,7 @@ class SolveFirstBehaviour : SimpleBehaviour() {
 
     override fun done(): Boolean {
         if (state == 6) {
-            println("${agent.aid.localName} (67-54)*(51-50)=$result")
+            println("${agent.aid.localName} 659 * 543 / 63 * 412 = $result")
             finished = true
         }
         return finished

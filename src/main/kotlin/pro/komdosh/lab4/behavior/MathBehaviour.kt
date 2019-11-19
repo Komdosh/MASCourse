@@ -3,11 +3,8 @@ package pro.komdosh.lab4.behavior
 import jade.core.behaviours.CyclicBehaviour
 import jade.lang.acl.ACLMessage
 import jade.lang.acl.MessageTemplate
-import pro.komdosh.lab4.agent.MathAgent
 
-class MathBehaviour(
-    private val agent: MathAgent
-) : CyclicBehaviour(agent) {
+class MathBehaviour : CyclicBehaviour() {
 
     private val actionsMap = mapOf<String, (Double, Double) -> Double>(
         Pair("add", Double::plus),
@@ -17,15 +14,23 @@ class MathBehaviour(
     )
 
     override fun action() {
-        val mt = MessageTemplate.and(
+        val mt = buildMathRequestMessageTemplate()
+
+        receiveMathRequest(mt)
+    }
+
+    private fun buildMathRequestMessageTemplate(): MessageTemplate? {
+        return MessageTemplate.and(
             MessageTemplate.MatchPerformative(ACLMessage.REQUEST),
             MessageTemplate.and(
                 MessageTemplate.MatchLanguage("predicate"),
                 MessageTemplate.MatchOntology("math-ontology")
             )
         )
-        val msg = agent.blockingReceive(mt)
+    }
 
+    private fun receiveMathRequest(mt: MessageTemplate?) {
+        val msg = agent.blockingReceive(mt)
         if (msg != null) {
             block(5000)
             println("${agent.aid.localName} Message: ${msg.content} was sent by ${msg.sender}")
