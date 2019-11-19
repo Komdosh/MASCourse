@@ -5,7 +5,7 @@ import jade.core.behaviours.ParallelBehaviour
 import pro.komdosh.lab4.behavior.MathBehaviour
 
 
-const val numberOfMathExecutors = 5
+const val numberOfMathExecutors = 4
 
 class MathAgent : Agent() {
     override fun setup() {

@@ -15,7 +15,7 @@ class SolveFirstBehaviour : SimpleBehaviour() {
     override fun action() {
         when (state) {
             0 -> {
-                sendMathRequest(agent, "Request 1", "( multiply 659 543 )")
+                sendMathRequest(agent, "Request 1", "( multiply 659 412 )")
                 state = 1
             }
             1 -> {
@@ -26,7 +26,7 @@ class SolveFirstBehaviour : SimpleBehaviour() {
                 }
             }
             2 -> {
-                sendMathRequest(agent, "Request 2", "( multiply 63 412 )")
+                sendMathRequest(agent, "Request 2", "( divide 543 63 )")
                 state = 3
             }
             3 -> {
@@ -37,7 +37,7 @@ class SolveFirstBehaviour : SimpleBehaviour() {
                 }
             }
             4 -> {
-                sendMathRequest(agent, "Request 3", "( divide $firstAns $secondAns )")
+                sendMathRequest(agent, "Request 3", "( multiply $firstAns $secondAns )")
                 state = 5
             }
             5 -> {

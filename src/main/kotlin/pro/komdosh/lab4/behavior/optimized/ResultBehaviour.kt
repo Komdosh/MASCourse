@@ -10,7 +10,7 @@ class ResultBehaviour(
 
     override fun action() {
         val result = receiveMathResponse(agent, resultRequestId)
-        print("${agent.aid.localName} Result for: $toEvalFunction = $result")
+        println("${agent.aid.localName} Result for: $toEvalFunction = $result")
     }
 
 }
