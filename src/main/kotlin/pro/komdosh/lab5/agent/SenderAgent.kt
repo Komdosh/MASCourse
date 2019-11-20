@@ -44,8 +44,7 @@ class SenderAgent : Agent() {
 
         manager.fillContent(msg, action)
 
-        val b = SenderBehaviour(this, msg)
-        addBehaviour(b)
+        addBehaviour(SenderBehaviour(this, msg))
         println("The following message is being sent:\n$msg")
     }
 

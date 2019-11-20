@@ -26,8 +26,6 @@ class ReceiverAgent : Agent() {
         val mt = MessageTemplate.MatchOntology(ontology.name)
         val receiveMsg = blockingReceive(mt)
         println("The following message is received:\n$receiveMsg")
-        //analysis of the received message
-        //  System.out.println(manager.extractContent(recmsg));
 
         val action = manager.extractContent(receiveMsg) as Action
         if (action.action is Register) {
