@@ -3,9 +3,12 @@ package pro.komdosh.lab1.behavior
 import jade.core.behaviours.TickerBehaviour
 import pro.komdosh.lab1.agent.TickerAgent
 
-private const val MAX_STEPS = 5
 
 class SimpleTick(private val agent: TickerAgent, period: Long) : TickerBehaviour(agent, period) {
+
+    companion object {
+        private const val MAX_STEPS = 5
+    }
 
     private var currentStep: Int = 0
 

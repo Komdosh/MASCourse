@@ -19,7 +19,7 @@ private fun getMathResponseMessageTemplate(replyWith: String): MessageTemplate {
     )
 }
 
-private fun parseAnswer(recvMsg: ACLMessage): Double {
+fun parseAnswer(recvMsg: ACLMessage): Double {
     val fromChar = recvMsg.content.indexOf("(")
     val toChar = recvMsg.content.lastIndexOf(")")
     return recvMsg.content.substring(fromChar + 1, toChar - 1).toDouble()

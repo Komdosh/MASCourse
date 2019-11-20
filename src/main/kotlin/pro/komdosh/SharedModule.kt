@@ -67,3 +67,37 @@ class StartSnifferAgent : Agent() {
         launcher.send(msg)
     }
 }
+
+
+private val actionsMap = mapOf<String, (Double, Double) -> Double>(
+    Pair("add", Double::plus),
+    Pair("subtract", Double::minus),
+    Pair("multiply", Double::times),
+    Pair("divide", Double::div)
+)
+
+fun getAvailableMathActions(): Set<String> {
+    return actionsMap.keys
+}
+
+private fun getDouble(content: String, action: String, isSecond: Boolean = false): Double {
+    var fromChar: Int = content.lastIndexOf(action) + action.length
+    if (isSecond) {
+        fromChar += content.substring(fromChar + 1).indexOf(" ")
+    }
+    val toChar: Int = content.substring(fromChar + 1).indexOf(if (isSecond) ")" else " ") + fromChar
+    return content.substring(fromChar + 1, toChar + 1).toDouble()
+}
+
+fun doMath(agentName: String, content: String, operation: String): Double {
+    val firstD = getDouble(content, operation)
+    val secondD = getDouble(content, operation, true)
+
+    val result = actionsMap[operation]?.let {
+        it(firstD, secondD)
+    } ?: 0.0
+
+    println("$agentName Making: $firstD $operation $secondD = $result")
+
+    return result
+}
