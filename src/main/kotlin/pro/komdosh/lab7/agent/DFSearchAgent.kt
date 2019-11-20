@@ -1,39 +1,78 @@
 package pro.komdosh.lab7.agent
 
+import jade.core.AID
 import jade.core.Agent
 import jade.domain.DFService
 import jade.domain.FIPAAgentManagement.DFAgentDescription
+import jade.domain.FIPAAgentManagement.Property
 import jade.domain.FIPAAgentManagement.SearchConstraints
 import jade.domain.FIPAAgentManagement.ServiceDescription
 
 class DFSearchAgent : Agent() {
     override fun setup() {
-        // Search for services of type " Course-Facilitator "
-        println("Agent $localName searching for services of type \"Course-Facilitator\"")
 
-        // Build the description used as template for the search
-        val template = DFAgentDescription()
-        val templateSd = ServiceDescription()
-        templateSd.type = "Course-Facilitator"
-        template.addServices(templateSd)
+        val instructor = "Zhandarov"
+        val language = "Leap"
+        println("Agent $localName searching for services with instructor: $instructor and language $language ")
 
         val sc = SearchConstraints()
-        // We want to receive 10 results at most
-        sc.maxResults = 10
+        sc.maxResults = 2
 
-        val results = DFService.search(this, template, sc)
+        val results = DFService.search(this, generateSearchTemplate(instructor, language), sc)
         if (results.isNotEmpty()) {
-            println("Agent $localName found the following Course-Facilitator services:")
+            println("Agent $localName found the following services:")
             results.forEach {
-                val provider = it.name
-                it.allServices.iterator().forEachRemaining { service ->
-                    if (service is ServiceDescription && service.type == "Course-Facilitator") {
-                        println("- Service \"${service.name}\" provided by agent ${provider.name}")
-                    }
-                }
+                printServicesInfo(it, language, instructor)
             }
         } else {
-            println("Agent $localName did not find any Course-Facilitator service")
+            println("Agent $localName did not found any service with following request")
         }
+    }
+
+    private fun printServicesInfo(
+        it: DFAgentDescription,
+        language: String,
+        instructor: String
+    ) {
+        val provider = it.name
+        it.allServices.asSequence().filter { service -> service is ServiceDescription }.forEach { service ->
+            if (service is ServiceDescription) {
+                val languageCheck = service.allLanguages.asSequence().any { lang -> lang == language }
+                val propertyCheck = service.allProperties.asSequence().any { prop ->
+                    if (prop is Property) {
+                        prop.name == "courseInstructor" && prop.value == instructor
+                    } else false
+                }
+                if (languageCheck && propertyCheck) {
+                    printServiceDescription(service, provider)
+                }
+            }
+        }
+    }
+
+    private fun printServiceDescription(
+        service: ServiceDescription,
+        provider: AID
+    ) {
+        println("- Service \"${service.name}\" provided by agent ${provider.name}")
+        println("  Full Description:")
+        println("   name: ${service.name}")
+        service.allLanguages.forEach { language ->
+            println("   language: $language")
+        }
+        service.allProperties.forEach { property ->
+            if (property is Property) {
+                println("   ${property.name}: ${property.value}")
+            }
+        }
+    }
+
+    private fun generateSearchTemplate(instructor: String, language: String): DFAgentDescription {
+        val template = DFAgentDescription()
+        val templateSd = ServiceDescription()
+        templateSd.addProperties(Property("courseInstructor", instructor))
+        templateSd.addLanguages(language)
+        template.addServices(templateSd)
+        return template
     }
 }

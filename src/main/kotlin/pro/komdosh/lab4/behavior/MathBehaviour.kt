@@ -37,7 +37,7 @@ class MathBehaviour : CyclicBehaviour() {
             val content = msg.content
 
             val operation = actionsMap.keys.find {
-                content.indexOf(it) > 0
+                content.contains(it)
             }.orEmpty()
 
             val result = if (operation.isNotEmpty()) doMath(content, operation) else 0.0
