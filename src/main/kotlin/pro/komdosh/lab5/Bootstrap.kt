@@ -11,7 +11,3 @@ fun main() {
     cc.createNewAgent("Sender", SenderAgent::class.java.name, null).start()
     cc.createNewAgent("Receiver", ReceiverAgent::class.java.name, null).start()
 }
-
-
-
-

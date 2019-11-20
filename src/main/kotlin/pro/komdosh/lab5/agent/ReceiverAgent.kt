@@ -18,6 +18,11 @@ class ReceiverAgent : Agent() {
         manager.registerOntology(ontology)
         println("Receiver agent $name is started.")
 
+        receiveActionRequest()
+        receiveActionRequest()
+    }
+
+    private fun receiveActionRequest() {
         val mt = MessageTemplate.MatchOntology(ontology.name)
         val receiveMsg = blockingReceive(mt)
         println("The following message is received:\n$receiveMsg")

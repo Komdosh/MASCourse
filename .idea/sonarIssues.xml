@@ -753,6 +753,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/kotlin/pro/komdosh/lab5/ontology/Deregister.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/kotlin/pro/komdosh/lab5/ontology/Deregistered.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/kotlin/pro/komdosh/lab5/ontology/Instructor.java">
           <value>
             <set />
@@ -799,6 +809,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/kotlin/pro/komdosh/lab5/ontology/StudentOntology.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/kotlin/pro/komdosh/lab5/ontology/Unregister.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/kotlin/pro/komdosh/lab5/ontology/Unregistered.kt">
           <value>
             <set />
           </value>

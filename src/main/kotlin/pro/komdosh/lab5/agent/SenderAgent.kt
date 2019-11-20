@@ -1,5 +1,6 @@
 package pro.komdosh.lab5.agent
 
+import jade.content.AgentAction
 import jade.content.ContentManager
 import jade.content.lang.sl.SLCodec
 import jade.content.onto.basic.Action
@@ -21,12 +22,23 @@ class SenderAgent : Agent() {
 
         val receiver = AID("Receiver", false)
 
-        val action = Action()
-        action.actor = receiver
-        action.action = Register(
+        val register = Register(
             Student("Tabakov", "4307"),
             Course("MAS Course", Instructor("Zhandarov", "CS"))
         )
+        sendAction(register, receiver)
+
+        val deregister = Unregister(
+            Student("Tabakov", "4307"),
+            Course("MAS Course", Instructor("Zhandarov", "CS"))
+        )
+        sendAction(deregister, receiver)
+    }
+
+    private fun sendAction(agentAction: AgentAction, receiver: AID) {
+        val action = Action()
+        action.actor = receiver
+        action.action = agentAction
 
         val msg = generateMsgRequest(receiver)
 

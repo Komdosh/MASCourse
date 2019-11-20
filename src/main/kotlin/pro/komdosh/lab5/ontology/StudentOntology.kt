@@ -15,7 +15,9 @@ class StudentOntology private constructor(base: Ontology) : Ontology(NAME, base)
         add(ConceptSchema(INSTRUCTOR), Instructor::class.java)
         add(ConceptSchema(COURSE), Course::class.java)
         add(AgentActionSchema(REGISTER), Register::class.java)
+        add(AgentActionSchema(UNREGISTER), Unregister::class.java)
         add(PredicateSchema(REGISTERED), Registered::class.java)
+        add(PredicateSchema(UNREGISTERED), Unregistered::class.java)
         add(PredicateSchema(COURSE_AVAILABLE), CourseAvailable::class.java)
 
         var cs = getSchema(STUDENT) as ConceptSchema
@@ -30,7 +32,11 @@ class StudentOntology private constructor(base: Ontology) : Ontology(NAME, base)
         cs.add("name", getSchema(BasicOntology.STRING) as PrimitiveSchema)
         cs.add("instructor", getSchema(INSTRUCTOR) as ConceptSchema)
 
-        val agentActionSchema = getSchema(REGISTER) as AgentActionSchema
+        var agentActionSchema = getSchema(REGISTER) as AgentActionSchema
+        agentActionSchema.add("student", getSchema(STUDENT) as ConceptSchema)
+        agentActionSchema.add("course", getSchema(COURSE) as ConceptSchema)
+
+        agentActionSchema = getSchema(UNREGISTER) as AgentActionSchema
         agentActionSchema.add("student", getSchema(STUDENT) as ConceptSchema)
         agentActionSchema.add("course", getSchema(COURSE) as ConceptSchema)
 
@@ -52,8 +58,10 @@ class StudentOntology private constructor(base: Ontology) : Ontology(NAME, base)
         const val COURSE = "COURSE"
         // Actions
         const val REGISTER = "REGISTER"
+        const val UNREGISTER = "UNREGISTER"
         // Predicates
         const val REGISTERED = "REGISTERED"
+        const val UNREGISTERED = "UNREGISTERED"
         const val COURSE_AVAILABLE = "COURSE-AVAILABLE"
         /**
          * This method grants access to the unique instance of the
