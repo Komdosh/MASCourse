@@ -10,7 +10,6 @@ import jade.content.schema.PrimitiveSchema
 
 class StudentOntology private constructor(base: Ontology) : Ontology(NAME, base) {
     init {
-        // Adds the roles of the basic ontology (ACTION, AID,...)
         add(ConceptSchema(STUDENT), Student::class.java)
         add(ConceptSchema(INSTRUCTOR), Instructor::class.java)
         add(ConceptSchema(COURSE), Course::class.java)

@@ -1,16 +1,15 @@
 package pro.komdosh.lab7
 
 import pro.komdosh.createMainContainer
-import pro.komdosh.lab4.agent.MathAgent
-import pro.komdosh.lab4.agent.OptimizedReqMathAgent
+import pro.komdosh.lab7.agent.DFRegisterAgent
+import pro.komdosh.lab7.agent.DFSearchAgent
 
 
 fun main() {
-    val cc = createMainContainer(withDummy = false, withGui = false)
+    val cc = createMainContainer(withDummy = false, withGui = true)
 
-    cc.createNewAgent("MathAgent", MathAgent::class.java.name, null).start()
-//    cc.createNewAgent("ReqMathAgent", ReqMathAgent::class.java.name, null).start()
-    cc.createNewAgent("OptimizedReqMathAgent", OptimizedReqMathAgent::class.java.name, null).start()
+    cc.createNewAgent("DFRegister", DFRegisterAgent::class.java.name, null).start()
+    cc.createNewAgent("DFSearchAgent", DFSearchAgent::class.java.name, null).start()
 }
 
 
