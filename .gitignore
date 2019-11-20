@@ -5,3 +5,4 @@ APDescription.txt
 MTPs-Main-Container.txt
 build/
 .idea/sonarlint/
+.idea/sonarIssues.xml
