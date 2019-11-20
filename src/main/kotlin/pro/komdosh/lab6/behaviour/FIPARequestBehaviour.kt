@@ -7,6 +7,7 @@ import java.util.*
 
 class FIPARequestBehaviour(agent: Agent, msg: ACLMessage, private var nResponders: Int = 0) :
     AchieveREInitiator(agent, msg) {
+
     override fun handleInform(inform: ACLMessage?) {
         println("Agent ${inform!!.sender.name} successfully performed the requested action")
     }
@@ -16,8 +17,8 @@ class FIPARequestBehaviour(agent: Agent, msg: ACLMessage, private var nResponder
         nResponders--
     }
 
-    override fun handleFailure(failure: ACLMessage?) {
-        if (failure!!.sender == myAgent.ams) {
+    override fun handleFailure(failure: ACLMessage) {
+        if (failure.sender == myAgent.ams) {
             // FAILURE notification from the JADE runtime: the receiver
             // does not exist
             println("Responder does not exist")
@@ -26,8 +27,8 @@ class FIPARequestBehaviour(agent: Agent, msg: ACLMessage, private var nResponder
         }
     }
 
-    override fun handleAllResultNotifications(notifications: Vector<*>?) {
-        if (notifications!!.size < nResponders) {
+    override fun handleAllResultNotifications(notifications: Vector<*>) {
+        if (notifications.size < nResponders) {
             // Some responder didn't reply within the specified timeout
             println("Timeout expired: missing ${nResponders - notifications.size} responses")
         }
