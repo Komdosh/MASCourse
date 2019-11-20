@@ -20,7 +20,7 @@ class SenderAgent : Agent() {
         manager.registerOntology(ontology)
         println("Sender agent $name is started.")
 
-        val receiver = AID("Receiver", false)
+        val receiver = AID("Receiver", AID.ISLOCALNAME)
 
         val register = Register(
             Student("Tabakov", "4307"),

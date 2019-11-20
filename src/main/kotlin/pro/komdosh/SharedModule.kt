@@ -47,8 +47,8 @@ class StartSnifferAgent : Agent() {
         launcher: Agent,
         agentToSniffController: AgentController
     ) {
-        val sniffer = AID("Sniffer", false)
-        val toSniff = AID(agentToSniffController.name, true)
+        val sniffer = AID("Sniffer", AID.ISLOCALNAME)
+        val toSniff = AID(agentToSniffController.name, AID.ISGUID)
         val sniffOnAction = SniffOn()
         sniffOnAction.addSniffedAgents(toSniff)
         sniffOnAction.sniffer = sniffer

@@ -29,7 +29,7 @@ class SenderBehaviour(
     }
 
     private fun sendMsg() {
-        val msg = buildSendMsg(ACLMessage(ACLMessage.QUERY_IF), AID("Receiver", false))
+        val msg = buildSendMsg(ACLMessage(ACLMessage.QUERY_IF), AID("Receiver", AID.ISLOCALNAME))
 
         agent.send(msg)
         println("Request for receiver sent")

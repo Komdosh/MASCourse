@@ -27,7 +27,7 @@ private fun parseAnswer(recvMsg: ACLMessage): Double {
 
 fun sendMathRequest(agent: Agent, replyWith: String, content: String) {
     val msg = ACLMessage(ACLMessage.REQUEST)
-    msg.addReceiver(AID("MathAgent", false))
+    msg.addReceiver(AID("MathAgent", AID.ISLOCALNAME))
     msg.language = "predicate"
     msg.ontology = "math-ontology"
     msg.replyWith = replyWith
