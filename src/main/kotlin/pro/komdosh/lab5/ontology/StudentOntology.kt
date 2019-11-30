@@ -43,6 +43,10 @@ class StudentOntology private constructor(base: Ontology) : Ontology(NAME, base)
         ps.add("student", getSchema(STUDENT) as ConceptSchema)
         ps.add("course", getSchema(COURSE) as ConceptSchema)
 
+        ps = getSchema(UNREGISTERED) as PredicateSchema
+        ps.add("student", getSchema(STUDENT) as ConceptSchema)
+        ps.add("course", getSchema(COURSE) as ConceptSchema)
+
         ps = getSchema(COURSE_AVAILABLE) as PredicateSchema
         ps.add("course", getSchema(COURSE) as ConceptSchema)
     }

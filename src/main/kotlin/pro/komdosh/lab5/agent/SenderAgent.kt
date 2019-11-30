@@ -28,11 +28,11 @@ class SenderAgent : Agent() {
         )
         sendAction(register, receiver)
 
-        val deregister = Unregister(
+        val unregister = Unregister(
             Student("Tabakov", "4307"),
             Course("MAS Course", Instructor("Zhandarov", "CS"))
         )
-        sendAction(deregister, receiver)
+        sendAction(unregister, receiver)
     }
 
     private fun sendAction(agentAction: AgentAction, receiver: AID) {

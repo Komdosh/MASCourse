@@ -1,4 +1,4 @@
-package pro.komdosh.lab6.behaviour
+package pro.komdosh.lab6.behaviour.example
 
 import jade.core.Agent
 import jade.domain.FIPAAgentManagement.FailureException

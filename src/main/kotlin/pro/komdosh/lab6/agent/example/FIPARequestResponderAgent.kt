@@ -1,10 +1,10 @@
-package pro.komdosh.lab6.agent
+package pro.komdosh.lab6.agent.example
 
 import jade.core.Agent
 import jade.domain.FIPANames
 import jade.lang.acl.ACLMessage
 import jade.lang.acl.MessageTemplate
-import pro.komdosh.lab6.behaviour.FIPAResponseBehaviour
+import pro.komdosh.lab6.behaviour.example.FIPAResponseBehaviour
 
 class FIPARequestResponderAgent : Agent() {
     override fun setup() {

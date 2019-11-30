@@ -1,10 +1,10 @@
-package pro.komdosh.lab6.agent
+package pro.komdosh.lab6.agent.example
 
 import jade.core.AID
 import jade.core.Agent
 import jade.domain.FIPANames
 import jade.lang.acl.ACLMessage
-import pro.komdosh.lab6.behaviour.FIPARequestBehaviour
+import pro.komdosh.lab6.behaviour.example.FIPARequestBehaviour
 import java.util.*
 
 class FIPARequestInitiatorAgent : Agent() {
